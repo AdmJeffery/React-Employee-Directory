@@ -4,7 +4,7 @@ class Table extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            Employees: [
+            employees: [
                 {id:1, name: 'Jayquellin', age: 20, email: "Jayquellin@email.com" },
                 {id:2, name: 'Belaakay', age: 21, email: "Belaakay@email.com" },
                 {id:3, name: 'De-nice', age: 22, email: "De-nice@email.com" },
@@ -13,13 +13,34 @@ class Table extends Component {
         } 
     }
 
-    render(){
-        return(
-            <div>
-                <h1>Employees</h1>
-            </div>
+    renderTableData() {
+        return this.state.employees.map((employee, index) => {
+           const { id, name, age, email } = employee //destructuring
+           return (
+              <tr key={id}>
+                 <td>{id}</td>
+                 <td>{name}</td>
+                 <td>{age}</td>
+                 <td>{email}</td>
+              </tr>
+           )
+        })
+     }
+  
+     render() {
+        return (
+           <div>
+              <h1 id='title'>Current Employees</h1>
+              <table id='employees'>
+                 <tbody>
+                    <tr>{this.renderTableHeader()}</tr>
+                    {this.renderTableData()}
+                 </tbody>
+              </table>
+           </div>
         )
-    }
-}
+     }
+  }
+
 
 export default Table
