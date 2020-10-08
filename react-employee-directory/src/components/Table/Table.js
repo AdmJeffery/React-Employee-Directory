@@ -27,6 +27,13 @@ class Table extends Component {
         })
      }
   
+     renderTableHeader() {
+        let header = Object.keys(this.state.employees[0])
+        return header.map((key, index) => {
+           return <th key={index}>{key.toUpperCase()}</th>
+        })
+     }
+
      render() {
         return (
            <div>

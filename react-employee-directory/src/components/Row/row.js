@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function row(props) {
+export default function Row(props) {
     return (
         <div className="row">{props.children}</div>
     )
