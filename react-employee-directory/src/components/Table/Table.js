@@ -62,7 +62,7 @@ class Table extends Component {
         this.setState({
             currentSort: nextSort
         })
-        alert("Clicked!")
+        
      }
 
      render() {
