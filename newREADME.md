@@ -1,6 +1,6 @@
 # React Employee Directory
 
-
+![Directory](./react-employee-directory/public/Screenshots/Directory.png)
 
 
 Welcome to my first React application! While simple, this does stand as an achievement for me as React was a bit difficult to grasp at first. This directory shows a list of employees and allows for sorting. This particular app does not make use of an API call. Rather, I personally seeded the information.
