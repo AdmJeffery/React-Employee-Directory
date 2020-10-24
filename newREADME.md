@@ -10,4 +10,4 @@ This app has little functionality. Presently, if you click the heading of the ta
 
 ## Deployed Website
 
-![React-User-Directory](https://admjeffery.github.io/React-Employee-Directory/)
+[React-User-Directory](https://admjeffery.github.io/React-Employee-Directory/)
